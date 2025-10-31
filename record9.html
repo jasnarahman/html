@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Hover Example</title>
+</head>
+<body>
+<h2 id="text">Hover over this content to see magic:</h2><img id="img" src="img3.jpeg" alt="img" width="300" 
+onmouseover="myfn1()" onmouseout="myfn2()">
+<script>
+function myfn1() {
+document.getElementById("text").innerHTML = "You hover over the content:";
+document.getElementById("img").src = "image4.jpg";}
+function myfn2() {
+document.getElementById("text").innerHTML = "Hover over this content to see magic:";
+document.getElementById("img").src = "image3.jpg"; }
+  </script>
+</body>
+</html>
+
