@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>STRING AND MATH FUNCTIONS</title>
+</head>
+
+<body>
+<center>
+<h2><font color="blue">MATH FUNCTION AND STRING FUNCTIONS</font></h2></center>
+
+<h3><font color="blue">MATH FUNCTIONS</font></h3>
+
+
+random is &nbsp;=&nbsp;<span id="p1"></span><br>
+<script>
+document.getElementById('p1').innerHTML = Math.random();
+</script>
+<br>
+
+<!-- Square root -->
+Square root of 144 is &nbsp;=&nbsp;<span id="p2"></span><br>
+<script>
+document.getElementById('p2').innerHTML = Math.sqrt(144);
+</script>
+<br>
+
+<!-- Power -->
+power(2,3) is &nbsp;=&nbsp;<span id="p3"></span><br>
+<script>
+document.getElementById('p3').innerHTML = Math.pow(2, 3);
+</script><br>
+
+
+floor value of 5.6 is &nbsp;=&nbsp;<span id="p4"></span><br>
+<script>
+document.getElementById('p4').innerHTML = Math.floor(5.6);
+</script><br>
+
+
+ceil value of 5.3 is &nbsp;=&nbsp;<span id="p5"></span><br>
+<script>
+document.getElementById('p5').innerHTML = Math.ceil(5.3);
+</script><br>
+
+round value of 3.6 is &nbsp;=&nbsp;<span id="p6"></span><br>
+<script>
+document.getElementById('p6').innerHTML = Math.round(3.6);
+</script><br>
+
+
+absolute value of -2.6 is &nbsp;=&nbsp;<span id="p7"></span><br>
+<script>
+document.getElementById('p7').innerHTML = Math.abs(-2.6);
+</script>
+
+
+<h2><font color="blue">STRING FUNCTIONS</font></h2>
+<script>
+var str = "jasna";
+document.write("String is: " + str);
+document.write("<br><br>Character at position 2 is: " + str.charAt(1));
+document.write("<br><br>");
+
+var s1 = "javascript";
+var s2 = "concat of example";
+var s3 = s1.concat(s2);
+
+document.write("String 1: " + s1 + "<br><br>");
+document.write("String 2: " + s2 + "<br><br>");
+document.write("1. Concatenation: " + s3 + "<br><br>");
+
+var n = s2.lastIndexOf("of");
+document.write("'of' in 'concat of example' is at position: " + n + "<br><br>");
+
+var s4 = s1.toUpperCase();
+document.write("4. 'javascript' to uppercase: " + s4);
+</script>
+</body>
+</html>
+
