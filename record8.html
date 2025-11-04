@@ -1,0 +1,20 @@
+<html>
+<body>
+<center>
+<h2><click the button to change Background color></h2>
+<button type="button" onclick="clrBtn();">change color</button>
+
+<script>
+var colors = ["blue", "red", "yellow", "green", "magenta", "skyblue", "black"];
+var index = 0;
+
+function clrBtn() {
+  document.body.style.backgroundColor = colors[index];
+  index = (index + 1) % colors.length;
+}
+</script>
+
+</center>
+</body>
+</html>
+
